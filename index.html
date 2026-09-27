@@ -353,11 +353,66 @@
         .nav-order{width:100%;margin-left:0;padding:17px 0 0;border:0;border-top:1px solid rgba(11,31,51,.14);border-radius:0;background:transparent;color:#0B1F33}
         .nav-order:hover{background:transparent;color:#315CFF}
         .product-grid > .product-card:nth-child(-n+3) .card-image{height:245px}
+        .card-meta{width:100%;min-height:48px;align-items:center;justify-content:center;margin-bottom:12px;padding:10px 14px;background:#EAF0F6;color:#0B1F33;border:3px solid #0B1F33;border-radius:0;box-shadow:0 7px 14px rgba(11,31,51,.12);text-align:center}
+        .card-meta h3{color:#0B1F33;font:800 19px/1.05 'Space Grotesk',Arial,sans-serif;letter-spacing:.02em;text-align:center;text-transform:uppercase}
+        .product-card:nth-child(2) .card-meta{background:#D24756;color:#fff}
+        .product-card:nth-child(2) .card-meta h3{color:#fff}
+        .product-card:nth-child(3) .card-meta{background:#315CFF;color:#fff}
+        .product-card:nth-child(3) .card-meta h3{color:#fff}
+        .product-card:nth-child(4) .card-meta{background:#0B1F33;color:#fff;border-color:#F7F9FA}
+        .product-card:nth-child(4) .card-meta h3{color:#fff}
       }
       @media(max-width:420px){.product-grid > .product-card:nth-child(-n+3) .card-image{height:270px}}
       .order-form,.order-form .field-row input,.order-form .field-row textarea{border-radius:0}
       .intro-content h2 i,.order-intro h2 i{color:#315CFF}
       .products-section{background:#DCE7F1}
+      .intro-content{padding-left:0}
+      .order-section{padding-left:0;padding-right:0}
+      .order-form{background:#C7D7E6}
+      .order-form{border:3px solid #0B1F33}
+      .order-form .field-row input,.order-form .field-row textarea{border:2px solid #0B1F33}
+      .order-form .button-dark{border-radius:0}
+      .modal-image{background:#0B1F33}
+      .modal-image img{object-fit:contain;padding:0;background:#0B1F33}
+      @media(min-width:801px){
+        .modal-panel{width:min(1120px,calc(100vw - 48px));grid-template-columns:1fr 1fr;max-height:86vh}
+        .modal-image{height:100%;min-height:0;aspect-ratio:auto}
+        .modal-image img{object-fit:cover;object-position:center top;padding:0;background:#0B1F33}
+        .modal-details{padding:34px 44px 28px}
+        .modal-details h2{font-size:48px;margin-bottom:15px}
+        .modal-details>p:not(.eyebrow){line-height:1.65;margin-bottom:22px}
+        .thumbnail-row{padding-top:20px}
+      }
+      .testimonials-section{padding:112px 0 118px;background:#0B1F33;color:#F7F9FA}
+      .testimonial-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:54px}
+      .testimonial-heading .eyebrow{color:#79A7FF;margin-bottom:20px}
+      .testimonial-heading h2{max-width:650px;margin:0;font-size:clamp(48px,5.8vw,78px);color:#F7F9FA}
+      .testimonial-heading h2 i{color:#79A7FF}
+      .testimonial-heading-note{max-width:255px;margin:0 0 5px;color:rgba(247,249,250,.62);font-size:12px;line-height:1.7}
+      .testimonial-slider{max-width:930px;margin:0 auto}
+      .testimonial-viewport{min-height:275px;display:grid;align-items:center;border-top:1px solid rgba(247,249,250,.18);border-bottom:1px solid rgba(247,249,250,.18)}
+      .testimonial-slide{display:none;padding:48px 0 42px;animation:testimonial-in .55s ease both}
+      .testimonial-slide.is-active{display:block}
+      .testimonial-quote{max-width:860px;margin:0 0 35px;font:600 clamp(28px,4vw,49px)/1.12 'Space Grotesk',Arial,sans-serif;letter-spacing:-.045em;color:#F7F9FA}
+      .testimonial-person{display:flex;align-items:center;gap:13px;color:#F7F9FA;font-size:11px;letter-spacing:.04em}
+      .testimonial-person strong{font-weight:700}
+      .testimonial-person span{color:rgba(247,249,250,.55)}
+      .testimonial-controls{display:flex;align-items:center;justify-content:space-between;padding-top:22px}
+      .testimonial-dots{display:flex;align-items:center;gap:8px}
+      .testimonial-dot{width:8px;height:8px;padding:0;border:1px solid rgba(247,249,250,.55);border-radius:50%;background:transparent;transition:width .25s,background .25s,border-color .25s}
+      .testimonial-dot.is-active{width:28px;border-color:#315CFF;border-radius:999px;background:#315CFF}
+      @keyframes testimonial-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+      @media(prefers-reduced-motion:reduce){.testimonial-slide{animation:none}}
+      @media(max-width:800px){
+        .testimonials-section{padding:80px 0 86px}
+        .testimonial-heading{display:block;margin-bottom:38px}
+        .testimonial-heading-note{max-width:320px;margin-top:22px}
+        .testimonial-viewport{min-height:320px}
+        .testimonial-slide{padding:38px 0 34px}
+        .testimonial-quote{font-size:30px}
+        .intro-content{padding-left:0}
+        .modal-image img{padding:0;background:#0B1F33}
+      }
     </style>
     <script>window.fieldFormPlaceholder='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"%3E%3Crect width="600" height="400" fill="%23EAF0F6"/%3E%3Ccircle cx="480" cy="80" r="120" fill="%23DCEEFF"/%3E%3Cpath d="M0 300 C150 220 280 340 420 260 C500 220 560 250 600 220 L600 400 L0 400 Z" fill="%230B1F33"/%3E%3Ccircle cx="390" cy="185" r="55" fill="%23315CFF"/%3E%3Ctext x="35" y="70" fill="%230B1F33" font-family="Arial" font-size="18" font-weight="700"%3EMEDLIK%3C/text%3E%3Ctext x="35" y="355" fill="white" font-family="Arial" font-size="28" font-weight="700"%3EIMAGE PLACEHOLDER%3C/text%3E%3C/svg%3E';</script>
     <script>
@@ -418,6 +473,49 @@ if (menuToggle && navMenu) {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 800) closeMobileMenu();
   });
+}
+
+const testimonialSlides = Array.from(document.querySelectorAll('.testimonial-slide'));
+const testimonialDots = Array.from(document.querySelectorAll('.testimonial-dot'));
+const testimonialSlider = document.querySelector('.testimonial-slider');
+let testimonialIndex = 0;
+let testimonialTimer;
+
+function showTestimonial(index) {
+  if (!testimonialSlides.length) return;
+  testimonialIndex = (index + testimonialSlides.length) % testimonialSlides.length;
+  testimonialSlides.forEach((slide, slideIndex) => {
+    const active = slideIndex === testimonialIndex;
+    slide.classList.toggle('is-active', active);
+    slide.setAttribute('aria-hidden', String(!active));
+  });
+  testimonialDots.forEach((dot, dotIndex) => {
+    const active = dotIndex === testimonialIndex;
+    dot.classList.toggle('is-active', active);
+    dot.setAttribute('aria-selected', String(active));
+  });
+}
+
+function startTestimonialRotation() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || testimonialSlides.length < 2) return;
+  clearInterval(testimonialTimer);
+  testimonialTimer = window.setInterval(() => showTestimonial(testimonialIndex + 1), 3000);
+}
+
+if (testimonialSlides.length > 1) {
+  testimonialDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showTestimonial(index);
+      startTestimonialRotation();
+    });
+  });
+  testimonialSlider.addEventListener('mouseenter', () => clearInterval(testimonialTimer));
+  testimonialSlider.addEventListener('mouseleave', startTestimonialRotation);
+  testimonialSlider.addEventListener('focusin', () => clearInterval(testimonialTimer));
+  testimonialSlider.addEventListener('focusout', (event) => {
+    if (!testimonialSlider.contains(event.relatedTarget)) startTestimonialRotation();
+  });
+  startTestimonialRotation();
 }
 
 const modal = document.querySelector('#product-modal');
@@ -545,6 +643,7 @@ document.querySelector('#order-form').addEventListener('submit', (event) => {
         <div class="nav-menu" id="main-menu">
           <a class="nav-link active" href="#home">Home</a>
           <a class="nav-link" href="#products">Products</a>
+          <a class="nav-link" href="#testimonials">Testimonials</a>
           <a class="nav-link" href="#about">Our approach</a>
           <a class="nav-link nav-order" href="#order">Start an order</a>
         </div>
@@ -602,6 +701,38 @@ document.querySelector('#order-form').addEventListener('submit', (event) => {
             </article>
           </div>
           <p class="gallery-hint"><span aria-hidden="true">＋</span> Select a collection to view the full edit</p>
+        </div>
+      </section>
+
+      <section class="testimonials-section" id="testimonials">
+        <div class="container">
+          <div class="testimonial-heading">
+            <div><p class="eyebrow">Team notes</p><h2>Made to be <i>remembered.</i></h2></div>
+            <p class="testimonial-heading-note">A few words from teams who know what it means to show up together.</p>
+          </div>
+          <div class="testimonial-slider" role="region" aria-roledescription="carousel" aria-label="Customer testimonials">
+            <div class="testimonial-viewport" aria-live="polite">
+              <article class="testimonial-slide is-active" aria-hidden="false">
+                <p class="testimonial-quote">“The kits look sharp, fit properly, and arrived ready for opening day. Medlik made the whole process feel simple.”</p>
+                <div class="testimonial-person"><strong>Jordan Reed</strong><span>Westside Baseball</span></div>
+              </article>
+              <article class="testimonial-slide" aria-hidden="true">
+                <p class="testimonial-quote">“We wanted something that felt like us. The final set looked fast before we even stepped onto the track.”</p>
+                <div class="testimonial-person"><strong>Maya Ellis</strong><span>Northline Track Club</span></div>
+              </article>
+              <article class="testimonial-slide" aria-hidden="true">
+                <p class="testimonial-quote">“From first sketch to final kit, every detail felt considered. Our players noticed the difference immediately.”</p>
+                <div class="testimonial-person"><strong>Chris Alvarez</strong><span>Harbor Football</span></div>
+              </article>
+            </div>
+            <div class="testimonial-controls">
+              <div class="testimonial-dots" role="tablist" aria-label="Choose a testimonial">
+                <button class="testimonial-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Show testimonial 1"></button>
+                <button class="testimonial-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial 2"></button>
+                <button class="testimonial-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial 3"></button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
